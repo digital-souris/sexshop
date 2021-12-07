@@ -5,6 +5,13 @@
     min-height: 100vh;
     padding-top: 88px;
   }
+  &_center {
+    text-align: center;
+  }
+  &_background {
+    background-image: linear-gradient(
+                    90deg,#490e67 0%,#f44c7f 100%);
+  }
 
   &__content {
     width: 85%;

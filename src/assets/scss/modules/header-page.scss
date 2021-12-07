@@ -1,0 +1,42 @@
+.header-page {
+  padding-top: 88px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(#000, .2);
+  }
+  @include media(768) {
+    padding-top: 60px;
+  }
+  &__content {
+    position: relative;
+    z-index: 2;
+    padding-top: calc(10vmax / 10);
+    padding-bottom: calc(10vmax / 10);
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__title {
+    font-size: calc(4 * 1rem);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    @include media(1024) {
+      font-size: calc((4 - 1) * 1.2vh + 1rem);
+    }
+  }
+  &__subtitle {
+    font-size: calc(1.5 * 1rem);
+    color: #fff;
+  }
+}

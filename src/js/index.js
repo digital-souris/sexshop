@@ -16,7 +16,7 @@ $(document).scroll(function () {
             image.css({'transform': `scale(${1.2 - (0.2 - percent)})`})
         }
     }
-    if (scrollPos > 100) {
+    if (scrollPos > 50) {
         $('.header').addClass('header_bg')
         if (sTop < scrollPos) {
             $('.header').addClass('header_top')
@@ -36,4 +36,20 @@ $(document).ready(function () {
     $('.header__burger').click(function () {
         $('.header__menu').slideToggle()
     })
+    $('.card__gallery_vertical').slick({
+        vertical: true,
+        slidesToShow: 3,
+        // slidesToScroll: 1,
+        arrows: false,
+        verticalSwiping: true,
+        swipeToSlide: true,
+        asNavFor: '.card__gallery_big',
+        focusOnSelect: true,
+        centerMode: true
+    })
+    $('.card__gallery_big').slick({
+        arrows: false,
+        asNavFor: '.card__gallery_vertical'
+    })
+    $('.card__item_hover').zoom()
 })

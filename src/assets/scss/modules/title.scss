@@ -1,0 +1,15 @@
+.title {
+  font-weight: 900;
+  &_second {
+    font-size: calc(3.8 * 1rem);
+  }
+  &_dark {
+    color: #000;
+  }
+  &_white {
+    color: #fff;
+  }
+  &_center {
+    text-align: center;
+  }
+}

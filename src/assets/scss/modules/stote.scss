@@ -1,0 +1,46 @@
+.store {
+  width: 100%;
+  box-shadow: 0px 0px 20px rgba(#000, .1);
+  display: block;
+  text-align: center;
+  @include media(768) {
+    margin-bottom: 5%;
+  }
+  &:hover {
+    .store {
+      &__image {
+        img:first-child {
+          opacity: 0;
+        }
+        img:last-child {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &__image {
+    position: relative;
+    &::after {
+      content: '';
+      position: relative;
+      display: block;
+      padding-top: 100%;
+    }
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      max-width: 100%;
+      transition: all .5s;
+      transform: translateY(-50%) translateX(-50%);
+      &:last-child {
+        opacity: 0;
+      }
+    }
+  }
+  &__title {
+    font-size: calc(1.6 * 1rem);
+    color: #000;
+    font-weight: 900;
+  }
+}

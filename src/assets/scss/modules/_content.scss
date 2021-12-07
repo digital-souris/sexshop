@@ -19,6 +19,9 @@
     }
   }
   &__text {
+    &_white {
+      color: #fff;
+    }
     p {
       margin: 1rem 0;
       font-size: calc(1.4 * 1rem);

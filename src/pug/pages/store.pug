@@ -1,0 +1,23 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Webpack + Pug';
+    - var description = 'Description for Webpack + Pug';
+    - var pageClass = 'index-page';
+
+block content
+    .header-page(style='    background-image: linear-gradient(\n' +
+    '    90deg,#490e67 0%,#f44c7f 100%);')
+        .header-page__content
+            h1.header-page__title Our Products
+    .page__wrapper
+        .container
+            .section__content
+                .row
+                    -for(let i = 0; i<2;i++)
+                        .col-12.col-md-6
+                            a(href='#').store
+                                .store__image
+                                    img(src='../../assets/img/snap1.jpg')
+                                    img(src='../../assets/img/snap2.jpg')
+                                h2.store__title Snail Vibe Purple

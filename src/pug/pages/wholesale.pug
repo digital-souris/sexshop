@@ -1,0 +1,39 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Webpack + Pug';
+    - var description = 'Description for Webpack + Pug';
+    - var pageClass = 'index-page';
+
+block content
+    .header-page(style='    background-image: url(../../assets/img/wholesale.jpg)')
+        .header-page__content
+            h1.header-page__title Looking to sell Snail Vibe <br/>in your store?
+            p.header-page__subtitle We have wholesale distributors based around the world.
+    .page__wrapper
+        .container
+            .section__content
+                h2.title.title_second.title_center.title_dark Wholesale Partners
+        .container
+            .section__content
+                .partners
+                    .row
+                        -for(let i = 0; i<12;i++)
+                            .col-6.col-sm-4.col-lg-2
+                                .partner
+                                    .partner__image
+                                        img(src='../../assets/img/snap1.jpg')
+                                    h3.partner__title Asia
+                                    .partner__desc South Korea - Allcon
+                                    a(href='#').partner__button Visit site
+        .container
+            .section__content
+                .iframe-map
+                    iframe(src='https://www.google.com/maps/d/embed?mid=1_kHb2snsmO_fG_L4dZMwMjeG1V-VO-28')
+        section.section.section_background.section_center
+            .container
+                .section__content
+                    h2.title.title_second.title_center.title_white Already one of our retailers?
+                    .content__text.content__text_white
+                        p We have an area just for you that contains everything you need to sell Snail Vibe including images, videos, POS and other excellent assets. Just ask your Sales Rep for a password and click the button below.
+                    a(href='#').button.button_white Enter B2B Portal

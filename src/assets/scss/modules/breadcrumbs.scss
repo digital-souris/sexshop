@@ -1,0 +1,22 @@
+.breadcrumbs {
+  ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    li {
+      padding-right: 0.5%;
+    }
+    a, span {
+      white-space: nowrap;
+      font-weight: 300;
+      color: #000;
+      font-size: calc(1 * 1rem);
+    }
+    i {
+      margin-left: 5%;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 0.8rem;
+    }
+  }
+}

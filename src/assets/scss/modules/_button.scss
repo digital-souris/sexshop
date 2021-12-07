@@ -1,0 +1,19 @@
+.button {
+  display: inline-block;
+  margin-top: 3%;
+  transition: all .25s;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 300px;
+  padding: 1.1em 1.837em;
+  font-size: calc(1.1 * 1rem);
+  &_white {
+    border-color: #fff;
+    color: #fff;
+    background-color: transparent;
+    &:hover {
+      background-color: #fff;
+      color: #ab3872;
+    }
+  }
+}

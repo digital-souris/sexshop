@@ -1,0 +1,59 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Webpack + Pug';
+    - var description = 'Description for Webpack + Pug';
+    - var pageClass = 'index-page';
+
+block content
+    .header-page(style='    background-image: linear-gradient(\n' +
+    '    90deg,#490e67 0%,#f44c7f 100%);')
+    .page__wrapper
+        .container
+            .section__content
+                .breadcrumbs
+                    ul
+                        li
+                            a(href='#') Our Products
+                            i >
+                        li
+                            span Snail Vibe Purple
+        .container
+            .section__content
+                .card
+                    .card__top
+                        .row.align-items-center
+                            .col-12.col-md-6
+                                .row.align-items-center
+                                    .col-2
+                                        .card__gallery.card__gallery_vertical
+                                            -for(let i = 0; i<10;i++)
+                                                .card__item.card__item_small
+                                                    img(src='../../assets/img/snap1.jpg')
+                                    .col-10
+                                        .card__gallery.card__gallery_big
+                                            -for (let i = 0; i < 10; i++)
+                                                .card__item.card__item_hover
+                                                    img(src='../../assets/img/snap1.jpg')
+                            .col-12.col-md-6
+                                h1.card__title Snail Vibe Purple
+                                .card__text
+                                    p Snail Vibe uses multi US patented technology to offer an unrivalled pleasure experience. Waterproof and made from body-safe silicone, Snail Vibe is a versatile pleasure tool.
+                                    p Welcome to a blended orgasm.
+                    .card__buttons
+                        .row
+                            .col-12.col-md-6.d-flex.justify-content-center
+                                a(href='#').card__button Check out wholesale stockists
+                            .col-12.col-md-6.d-flex.justify-content-center
+                                a(href='#').card__button Check out wholesale stockists
+                        hr
+                    .card__info
+                        h2.card__subtitle Specifications
+                        -for(let i = 0;i<10;i++)
+                            .card__item
+                                .row
+                                    .col-6
+                                        span Material
+                                    .col-6
+                                        span Body safe medical grade silicone
+                    a(href='#').card__button Check out wholesale stockists
