@@ -1,0 +1,33 @@
+// px to rem
+@function rem($pixels, $context: $mainFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
+
+@mixin size($width,$height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin media($size) {
+  @media screen and (max-width: $size + px) {
+    @content;
+  }
+}
+@mixin mediaMin($size) {
+  @media screen and (min-width: $size + px) {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}

@@ -1,0 +1,31 @@
+.section {
+  padding-top: 3.3vmax;
+  padding-bottom: 3.3vmax;
+  &_first {
+    min-height: 100vh;
+    padding-top: 88px;
+  }
+
+  &__content {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+
+  &_color {
+    background: #f6edea;
+  }
+  
+  &_fourth {
+    background-image: url(../img/fourth.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% auto;
+    //background-attachment: fixed;
+    //min-height: 500px;
+    @include media(768) {
+      background-attachment: fixed;
+      min-height: 500px;
+    }
+  }
+}

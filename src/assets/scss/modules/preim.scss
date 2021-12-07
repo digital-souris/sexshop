@@ -1,0 +1,23 @@
+.preim {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  @include media(992) {
+    grid-gap: 20px 0px;
+  }
+  &__item {
+    text-align: center;
+    img {
+      max-width: 150px;
+      width: 50%;
+      vertical-align: top;
+    }
+    p {
+      margin: 3% 0 0;
+      font-weight: 400;
+      color: #000;
+      font-size: calc(0.9 * 1rem);
+    }
+  }
+}

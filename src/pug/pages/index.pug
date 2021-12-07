@@ -1,0 +1,134 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Webpack + Pug';
+    - var description = 'Description for Webpack + Pug';
+    - var pageClass = 'index-page';
+
+block content
+    section.section_first.first
+        .first__background
+            .first__image
+                img(src='../../assets/img/background.jpg')
+            .first__overlay
+        .first__content
+            h1
+                strong Good vibes for all!
+            .first__text Every body is different and we have created a genuinely flexible vibe with maximum pleasure in mind.
+
+    section.section.section_second
+        .section__content
+            .row
+                .col-md-5
+                    h2.content__title
+                        strong One toy that does it all!
+                    .content__text
+                        p The first vibrator in the world to offer the <strong>vibrating power</strong> of a wand,<br>the <strong>insertion depth</strong> of a dildo, and<br>the <strong>dual stimulation</strong> of a rabbit vibrator
+                    .content__button
+                        a(href='#') Shop now
+                .col-md-7
+                    .content__iframe.content__iframe_top
+                        <iframe  src="https://www.youtube.com/embed/0Ueyil4nO7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    section.section.section_color.section_third
+        .container
+            .row.preim
+                -for (var i = 0; i < 6; i++)
+                    .col-lg-2.col-md-4.col-sm-6.col-xs-6
+                        .preim__item
+                            img(src='../../assets/img/preim.png')
+                            p body-safe medical grade silicone
+    section.section.section_fourth
+        .container
+            .section__content
+                .row.justify-content-end
+                    .col.col-md-6
+                        .content__item.content__item_border.content__item_reverse
+                            .content__image.content__image_absolute.content__image_reverse
+                                img(src='../../assets/img/item.jpg')
+                            h3.content__subtitle 2 independent<br>powerful motors
+                            .content__text.content__text_small.content__text_reverse
+                                p 1 in the Spiral Head for <strong>clitoral stimulation</strong> and 1 at the point of the shaft for <strong>internal pleasure</strong>. Each has 5 vibration modes and 5 speeds, resulting in <strong>over 600 combinations</strong> in one orgasmic multi-vibe.
+                .row
+                    .col.col-md-6
+                        .content__item.content__item_border
+                            .content__image.content__image_absolute
+                                img(src='../../assets/img/item.jpg')
+                            h3.content__subtitle 2 independent<br>powerful motors
+                            .content__text.content__text_small
+                                p 1 in the Spiral Head for <strong>clitoral stimulation</strong> and 1 at the point of the shaft for <strong>internal pleasure</strong>. Each has 5 vibration modes and 5 speeds, resulting in <strong>over 600 combinations</strong> in one orgasmic multi-vibe.
+                .row.justify-content-end
+                    .col.col-md-6
+                        .content__item.content__item_border.content__item_reverse
+                            .content__image.content__image_absolute.content__image_reverse
+                                img(src='../../assets/img/item.jpg')
+                            h3.content__subtitle 2 independent<br>powerful motors
+                            .content__text.content__text_small.content__text_reverse
+                                p 1 in the Spiral Head for <strong>clitoral stimulation</strong> and 1 at the point of the shaft for <strong>internal pleasure</strong>. Each has 5 vibration modes and 5 speeds, resulting in <strong>over 600 combinations</strong> in one orgasmic multi-vibe.
+    section.section.section_fiveth
+        .container
+            .section__content
+                h2.content__title.content__title_center
+                    strong What’s your pleasure?
+                .content__text.content__text_center
+                    p The Snail Vibe is a versatile pleasure tool that can be used alone or with a partner. <br/>Hold back the flexible clitoral stimulator for a traditional vibrator experience. Or use the strong vibrations externally, on the clitoris, or any other part of the body where a massage is desired.
+        .content__wrapper
+            .container
+                .row
+                    -for(let x = 0; x< 3; x++)
+                        .col-md-4
+                            .content__wrap.content__wrap_background
+                                .content__circle.content__circle_hover
+                                    img(src='../../assets/img/hover1.jpg')
+                                    img(src='../../assets/img/hover2.jpg')
+                                h4.content__medium External Stimulation
+                                .content__small
+                                    p Apply lube liberally to the shaft and pleasure point. Turn on the pleasure point motor, unfurl the flexible spiral head and experience sensual internal sensations.
+    section.section.section_color.section_sixth
+        .container
+            .section__content
+                .row.flex-row-reverse.align-items-center
+                    .col-md-5
+                        .content__circle.content__circle_hover.content__circle_empty
+                            img(src='../../assets/img/hover1.jpg')
+                            img(src='../../assets/img/hover2.jpg')
+                    .col-md-7
+                        h2.content__big Syncro Stimulation
+                        .about__content
+                            .content__text
+                                p Revel in the exquisite sensations of a blended orgasm.
+                            .about__text
+                                p Turn on both motors, splash on some lube and enjoy the all-encompassing synchronised sensations. Work your way through the settings and unfurl the spiral head to find your perfect combination of mode, intensity, pressure and motion.
+                            .content__button
+                                a(href='#') Shop now
+    section.section.section_fiveth
+        .container
+            .section__content
+                h2.content__title.content__title_center
+                    strong What’s your pleasure?
+                .content__text.content__text_center
+                    p Snail Vibe was inspired by the work of 2 pioneering sexologists, psychiatrist Dr Helen Kaplan and psychotherapist Edward Eichel.
+        .container
+            .section__content
+                .row
+                    -for(let i = 0; i< 2; i++)
+                        .col-md-6
+                            .snail
+                                .snail__image
+                                    img(src='../../assets/img/snail.gif')
+                                .snail__text
+                                    p The Bridge Technique developed by Dr Helen Kaplan helps create new neural connections between erogenous zones. External and internal stimulation is connected by the "Bridge" through which the clitoral orgasm becomes a vaginal orgasm or vice versa. Snail Vibe provides tailored pleasure to two both the clitoris and vagina through motion and stimulating vibrations with a quick click on a button.
+    section.section.section_seventh
+        .container
+            .section__content.frame
+                .row.align-items-stretch
+                    .col-md-4
+                        .frame__content
+                            h3.content__subtitle Try our interactive Snail Vibe simulator
+                            .about__content
+                                .about__text
+                                    p With our interactive Snail Vibe simulator, you can virtually control a 3D life-size Snail Vibe.
+                                    p View the Snail Vibe from any angle whilst rocking the slider from side to side to see Snail Vibes fantastic range of motion.
+                                    p Even test out the independent motor controls and see the range of rhythmic vibration patterns that you can choose from by clicking and holding the + and ~ buttons.
+                    .col-md-8
+                        .frame__iframe
+                            iframe(src='https://4d.vonc.fr/tmp/snailvibe/index.html#halloween')

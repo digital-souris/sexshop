@@ -1,0 +1,14 @@
+.about {
+  &__content {
+    padding-top: 5%;
+  }
+  &__text {
+    font-size: 1rem;
+    color: #000;
+    max-width: 730px;
+    font-weight: 300;
+    a {
+      color: #ab3872;
+    }
+  }
+}

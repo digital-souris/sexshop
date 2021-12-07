@@ -1,0 +1,42 @@
+// footer style
+
+.footer {
+  padding-top: calc(11vmax / 10);
+  padding-bottom: calc(11vmax / 10);
+  &__title {
+    color: #ab3872;
+    font-size: calc(1.6 * 1rem);
+    font-weight: 900;
+  }
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 200px;
+    padding-top: 3%;
+    @include media(768) {
+      padding-bottom: 5%;
+    }
+  }
+  &__item {
+    width: 32px;
+    height: 32px;
+    border-radius: 10em;
+    border: 2px solid #000;
+  }
+  &__form {
+    padding-top: 2%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @include media(768) {
+      flex-wrap: wrap;
+    }
+  }
+  &__line {
+    height: 1px;
+    background: #ab3872;
+    width: 100%;
+    margin: 2rem 0 .5rem;
+  }
+}

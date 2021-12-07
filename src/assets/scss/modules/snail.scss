@@ -1,0 +1,14 @@
+.snail {
+  &__image {
+    img {
+      max-width: 100%;
+      vertical-align: top;
+    }
+  }
+  &__text {
+    font-size: 1rem;
+    color: #000;
+    max-width: 730px;
+    font-weight: 300;
+  }
+}

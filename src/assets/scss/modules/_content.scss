@@ -1,0 +1,231 @@
+.content {
+  &__title {
+    font-size: calc(3.6 * 1rem);
+    line-height: 1.2432;
+    margin: 2rem 0;
+    @include media(1024) {
+      font-size: calc((3.8 - 1) * 1.2vw + 1rem);
+    }
+    strong {
+      background: linear-gradient(to bottom,#f44c7f,#490e67);
+      -webkit-background-clip: text;
+      color: transparent;
+      margin: 0%;
+      word-wrap: break-word;
+      font-weight: 600;
+    }
+    &_center {
+      text-align: center;
+    }
+  }
+  &__text {
+    p {
+      margin: 1rem 0;
+      font-size: calc(1.4 * 1rem);
+      font-weight: 300;
+      @include media(1024) {
+        font-size: calc((1.5 - 1) * 1.2vw + 1rem);
+      }
+      strong {
+        font-weight: bold;
+      }
+    }
+    &_center {
+      text-align: center;
+      line-height: 1.8;
+    }
+    &_small {
+      max-width: 480px;
+      padding-top: 4vh;
+      @include media(768) {
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 2%;
+      }
+    }
+    &_reverse {
+      margin-left: auto;
+    }
+  }
+  &__button {
+    padding: 17px;
+    padding-left: 0;
+    a {
+      color: #ab3872;
+      border-color: #ab3872;
+      background: transparent;
+      border-radius: 300px;
+      border-width: 2px;
+      border-style: solid;
+      display: inline-block;
+      -webkit-font-smoothing: antialiased;
+      line-height: normal;
+      padding: 1.1em 1.837em;
+    }
+  }
+  &__iframe {
+    position: relative;
+    &::before {
+      content: '';
+      padding-top: 56.25%;
+      display: block;
+      position: relative;
+    }
+    &_top {
+      margin-top: 10vh;
+      @include media(768) {
+        margin-top: 2vh;
+      }
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__item {
+    padding: 10%;
+    position: relative;
+    margin-bottom: 10%;
+    @include media(768) {
+      padding: 0 0 1%;
+    }
+    &_border {
+      border: 1px solid #000;
+      min-height: 560px;
+      @include media(768) {
+        min-height: auto;
+      }
+    }
+    &_reverse {
+      text-align: right;
+    }
+  }
+
+  &__image {
+    img {
+      vertical-align: top;
+      max-width: 100%;
+    }
+    &_absolute {
+      width: 50vw;
+      max-width: 660px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 90%;
+      @include media(768) {
+        width: 100%;
+        max-width: 100%;
+        position: static;
+        transform: translateY(0);
+      }
+    }
+    &_reverse {
+      left: auto;
+      right: 90%;
+    }
+  }
+  &__subtitle {
+    color: #ab3872;
+    font-weight: 900;
+    letter-spacing: .02em;
+    font-size: calc(2.2 * 1rem);
+    line-height: 1.3328;
+    @include media(1024) {
+      font-size: calc((2.2 - 1) * 1.2vh + 1rem);
+    }
+    @include media(768) {
+      padding-top: 3%;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+  }
+  &__wrapper {
+    padding-top: 5vh;
+  }
+  &__wrap {
+    padding: 10%;
+    @include media(768) {
+      margin-bottom: 20px;
+    }
+    &_background {
+      background: #f6edea;
+    }
+  }
+  &__circle {
+    border-radius: 600px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10%;
+    &_empty {
+      margin-bottom: 0;
+    }
+    img {
+      vertical-align: top;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      object-position: 50% 50%;
+      object-fit: cover;
+      min-height: 100%;
+      width: 100%;
+      transition: all .5s;
+      &:first-child {
+        opacity: 1;
+      }
+      &:last-child {
+        opacity: 0;
+      }
+    }
+    &::after {
+      content: '';
+      position: relative;
+      padding-top: 100%;
+      display: block;
+    }
+    &_hover {
+      &:hover {
+        img {
+          &:first-child {
+            opacity: 0;
+          }
+          &:last-child {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  
+  &__medium {
+    text-align: center;
+    font-size: calc(1 * 1rem);
+    color: #000;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: .02em;
+  }
+  &__small {
+    padding-top: 6%;
+    font-size: calc(.8 * 1rem);
+    text-align: center;
+
+  }
+
+  &__big {
+    font-size: calc(2.2 * 1rem);
+    font-weight: 900;
+    @include media(1024) {
+      font-size: calc((2.2 - 1) * 1.2vh + 1rem);
+      padding-top: 4%;
+    }
+  }
+}
