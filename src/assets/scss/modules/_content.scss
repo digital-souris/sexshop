@@ -46,6 +46,18 @@
         padding-top: 2%;
       }
     }
+    &_events {
+      p {
+        font-size: 1rem;
+        font-weight: 300;
+        @include media(1024) {
+          font-size: .9rem;
+        }
+        strong {
+          font-weight: 400;
+        }
+      }
+    }
     &_reverse {
       margin-left: auto;
     }

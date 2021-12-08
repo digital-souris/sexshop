@@ -2,12 +2,27 @@
   font-weight: 900;
   &_second {
     font-size: calc(3.8 * 1rem);
+    @include media(1024) {
+      font-size: calc((3.8 - 1) * 1.2vh + 1rem);
+    }
+  }
+  &_third {
+    font-size: calc(2 * 1rem);
+    @include media(1024) {
+      font-size: calc((2.2 - 1) * 1.2vh + 1rem);
+    }
   }
   &_dark {
     color: #000;
   }
   &_white {
     color: #fff;
+  }
+  &_purple {
+    background: linear-gradient(to bottom,#f44c7f,#490e67);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0%;
   }
   &_center {
     text-align: center;

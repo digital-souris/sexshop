@@ -52,4 +52,15 @@ $(document).ready(function () {
         asNavFor: '.card__gallery_vertical'
     })
     $('.card__item_hover').zoom()
+    $('.event__plus').click(function () {
+        $('.event__content').slideUp()
+        let wrap = $(this).closest('.event__item')
+        if(wrap.hasClass('active')) {
+            wrap.removeClass('active')
+        }
+        else {
+            wrap.addClass('active')
+            wrap.find('.event__content').slideDown()
+        }
+    })
 })

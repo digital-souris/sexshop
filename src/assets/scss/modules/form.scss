@@ -5,6 +5,27 @@
     @include media(768) {
       margin-bottom: 5%;
     }
+    &_half {
+      max-width: 100%;
+      width: 50%;
+      padding: 0 5px;
+      margin-bottom: 15px;
+      @include media(768) {
+        width: 100%;
+      }
+    }
+    &_full {
+      width: 100%;
+      max-width: 100%;
+      padding: 0 5px;
+      margin-bottom: 15px;
+    }
+  }
+  &__label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: calc(1 * 1rem);
+    font-weight: 300;
   }
   &__input {
     display: flex;
@@ -32,9 +53,17 @@
     @include media(768) {
       margin-left: 0;
     }
+    &_contacts {
+      margin-left: 0;
+    }
     &:hover {
       color: #fff;
       background-color: #ab3872;
     }
+  }
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
   }
 }

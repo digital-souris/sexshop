@@ -1,0 +1,31 @@
+extends ../layout/main
+
+
+block content
+    .header-page(style='    background-image: url(../../assets/img/wholesale.jpg)')
+        .header-page__content
+            h1.header-page__title Stores & Events
+    .page__wrapper
+        .container
+            .section__content
+                .row
+                    .col-12.col-md-3
+                        h2.title.title_third.title_dark Our stockist locations across the globe
+                        .content__text.content__text_events
+                            p If you are visiting a store please check directly with the store first to ensure they have stock.
+                            p Please Note: Not all the store locations for companies with multiple locations are marked on this map. Please check the companies own website for a complete list of their stores locations and to confirm whether they have stock of Snail Vibe at this time.
+                            p
+                                strong Thanks to all our wonderful stockists for helping us spread the joy of Snail Vibe around the world!
+                    .col-12.col-md-9
+                        .iframe-map
+                            iframe(src='https://www.google.com/maps/d/embed?mid=1_kHb2snsmO_fG_L4dZMwMjeG1V-VO-28')
+                        .event
+                            -for(let i = 0;i<10;i++)
+                                .event__item
+                                    .event__head
+                                        h3.event__title Australasia
+                                        .event__plus
+                                            span
+                                            span
+                                    .event__content
+                                        p 123

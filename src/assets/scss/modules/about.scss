@@ -11,4 +11,33 @@
       color: #ab3872;
     }
   }
+  &__image {
+    img {
+      max-width: 100%;
+      vertical-align: top;
+    }
+  }
+  &__wrapper {
+    position: relative;
+    padding-top: 0%;
+  }
+  &__title {
+    //position: absolute;
+    top: 0;
+    left: 0;
+    width: 130%;
+    z-index: 3;
+    font-size: calc(3.8 * 1rem);
+    color: #fff;
+    line-height: 1.5;
+    display: inline;
+    text-transform: none;
+    //text-align: center;
+    white-space: pre-wrap;
+    background-color: #ab3872;
+    box-shadow: 0.2em 0 0 #ab3872, -0.2em 0 0 #ab3872;
+    @include media(1024) {
+      font-size: calc((3.8 - 1) * 1.2vw + 1rem);
+    }
+  }
 }
